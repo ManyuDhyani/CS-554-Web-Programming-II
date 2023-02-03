@@ -1,0 +1,19 @@
+{
+  "name": "cs-554-lab-1",
+  "version": "1.0.0",
+  "description": "my lab 1 module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Manyu Dhyani 20015463",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongodb": "^4.13.0",
+    "xss": "^1.0.14"
+  }
+}
