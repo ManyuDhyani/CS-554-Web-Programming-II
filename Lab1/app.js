@@ -32,7 +32,14 @@ app.use((req, res, next) => {
   let requestMethod = req.method;
   let requestRoute = req.originalUrl;
   let requestBody = req.body
-  console.log(requestBody)
+  if(req.body.password){
+    let pswd = req.body.password
+    delete req.body.password
+    console.log(requestBody);
+    req.body.password = pswd;
+  } else {
+    console.log(requestBody);
+  }
   console.log(`${requestMethod}  ${requestRoute}`);
   next();
 });
