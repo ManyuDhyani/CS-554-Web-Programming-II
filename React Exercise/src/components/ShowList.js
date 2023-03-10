@@ -215,7 +215,7 @@ const ShowList = (props) => {
 			<div>
 				<SearchShows searchValue={searchValue} />
 				<br />
-				{ Pagination }
+				{ !searchTerm ? Pagination : null }
 				<br />
 				<Grid container className={classes.grid} spacing={5}>
 					{card}
